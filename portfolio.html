@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Izhan Akhter - Professional Video Editor</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="assets/css/portfolio.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css"
+    />
+  </head>
+  <body class="page-transition">
+    <!-- Page Transition Overlay -->
+    <div class="transition-overlay"></div>
+
+    <!-- Header -->
+    <header id="main-header">
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">IZHAN<span>AKHTER</span></a>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Portfolio Hero -->
+    <section class="portfolio-hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>My Portfolio</h1>
+          <p class="subtitle">A showcase of my best video editing projects</p>
+          <div class="breadcrumbs">
+            <a href="index.html">Home</a> / <span>Portfolio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Filters -->
+    <section class="portfolio-filters">
+      <div class="container">
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="youtube">YouTube</button>
+          <button class="filter-btn" data-filter="commercial">
+            Commercials
+          </button>
+          <button class="filter-btn" data-filter="music">Music Videos</button>
+          <button class="filter-btn" data-filter="short-film">
+            Short Films
+          </button>
+          <button class="filter-btn" data-filter="documentary">
+            Documentaries
+          </button>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search projects..." />
+          <button><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio-grid-section">
+      <div class="container">
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- Project 1 -->
+          <div
+            class="portfolio-item"
+            data-category="youtube"
+            data-tags="travel vlog adventure"
+          >
+            <div class="portfolio-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="Mountain Adventure Vlog"
+              />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Mountain Adventure Vlog</h3>
+                  <p>Travel & Adventure</p>
+                  <a
+                    href="https://vimeo.com/123456789"
+                    class="video-popup"
+                    data-lg-size="1280-720"
+                  >
+                    <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Mountain Adventure Vlog</h3>
+              <p>YouTube Series • 2023</p>
+              <div class="portfolio-tags">
+                <span>Travel</span>
+                <span>Adventure</span>
+                <span>4K</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div
+            class="portfolio-item"
+            data-category="commercial"
+            data-tags="product tech commercial"
+          >
+            <div class="portfolio-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="Tech Product Commercial"
+              />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Tech Product Commercial</h3>
+                  <p>Product Promotion</p>
+                  <a
+                    href="https://vimeo.com/987654321"
+                    class="video-popup"
+                    data-lg-size="1280-720"
+                  >
+                    <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Tech Product Commercial</h3>
+              <p>Commercial • 2023</p>
+              <div class="portfolio-tags">
+                <span>Product</span>
+                <span>Tech</span>
+                <span>Cinematic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div
+            class="portfolio-item"
+            data-category="music"
+            data-tags="music video performance"
+          >
+            <div class="portfolio-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="Indie Band Music Video"
+              />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Indie Band Music Video</h3>
+                  <p>Music Performance</p>
+                  <a
+                    href="https://vimeo.com/456789123"
+                    class="video-popup"
+                    data-lg-size="1280-720"
+                  >
+                    <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Indie Band Music Video</h3>
+              <p>Music Video • 2022</p>
+              <div class="portfolio-tags">
+                <span>Music</span>
+                <span>Performance</span>
+                <span>Color Grading</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div
+            class="portfolio-item"
+            data-category="short-film"
+            data-tags="drama shortfilm"
+          >
+            <div class="portfolio-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="The Last Goodbye"
+              />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>The Last Goodbye</h3>
+                  <p>Short Drama Film</p>
+                  <a
+                    href="https://vimeo.com/789123456"
+                    class="video-popup"
+                    data-lg-size="1280-720"
+                  >
+                    <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>The Last Goodbye</h3>
+              <p>Short Film • 2022</p>
+              <div class="portfolio-tags">
+                <span>Drama</span>
+                <span>Narrative</span>
+                <span>Award Winning</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div
+            class="portfolio-item"
+            data-category="documentary"
+            data-tags="nature wildlife documentary"
+          >
+            <div class="portfolio-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1580136607042-1af44c6138c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="Wildlife Documentary"
+              />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Wildlife Documentary</h3>
+                  <p>Nature & Conservation</p>
+                  <a
+                    href="https://vimeo.com/654321987"
+                    class="video-popup"
+                    data-lg-size="1280-720"
+                  >
+                    <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Wildlife Documentary</h3>
+              <p>Documentary • 2021</p>
+              <div class="portfolio-tags">
+                <span>Nature</span>
+                <span>Wildlife</span>
+                <span>4K</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div
+            class="portfolio-item"
+            data-category="youtube"
+            data-tags="fitness tutorial youtube"
+          >
+            <div class="portfolio-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="Fitness Tutorial Series"
+              />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Fitness Tutorial Series</h3>
+                  <p>Health & Fitness</p>
+                  <a
+                    href="https://vimeo.com/321987654"
+                    class="video-popup"
+                    data-lg-size="1280-720"
+                  >
+                    <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Fitness Tutorial Series</h3>
+              <p>YouTube Series • 2023</p>
+              <div class="portfolio-tags">
+                <span>Fitness</span>
+                <span>Tutorial</span>
+                <span>Dynamic</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 7 -->
+          <div
+            class="portfolio-item"
+            data-category="commercial"
+            data-tags="fashion beauty commercial"
+          >
+            <div class="portfolio-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="Fashion Brand Commercial"
+              />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Fashion Brand Commercial</h3>
+                  <p>Luxury Fashion</p>
+                  <a
+                    href="https://vimeo.com/987123654"
+                    class="video-popup"
+                    data-lg-size="1280-720"
+                  >
+                    <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Fashion Brand Commercial</h3>
+              <p>Commercial • 2022</p>
+              <div class="portfolio-tags">
+                <span>Fashion</span>
+                <span>Beauty</span>
+                <span>Luxury</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 8 -->
+          <div
+            class="portfolio-item"
+            data-category="music"
+            data-tags="concert live music"
+          >
+            <div class="portfolio-thumbnail">
+              <img
+                src="https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80"
+                alt="Live Concert Highlights"
+              />
+              <div class="portfolio-overlay">
+                <div class="overlay-content">
+                  <h3>Live Concert Highlights</h3>
+                  <p>Music Performance</p>
+                  <a
+                    href="https://vimeo.com/76979871"
+                    class="video-popup"
+                    data-lg-size="1280-720"
+                    target="_blank"
+                  >
+                    <i class="fas fa-play"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio-info">
+              <h3>Live Concert Highlights</h3>
+              <p>Music Video • 2021</p>
+              <div class="portfolio-tags">
+                <span>Concert</span>
+                <span>Live</span>
+                <span>Energetic</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="load-more">
+          <button id="load-more-btn" class="btn outline">
+            Load More Projects
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="portfolio-cta">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Elevate Your Video Content?</h2>
+          <p>
+            Let's discuss how I can help bring your vision to life with
+            professional editing.
+          </p>
+          <div class="cta-buttons">
+            <a href="contact.html" class="btn primary">Get in Touch</a>
+            <a href="services.html" class="btn secondary">View Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="main-footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <div class="logo">
+              <a href="index.html">IZHAN<span>AKHTER</span></a>
+            </div>
+            <p>
+              Professional video editor crafting compelling visual stories for
+              brands, creators, and artists.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+              <li><a href="services.html">YouTube Editing</a></li>
+              <li><a href="services.html">Social Media</a></li>
+              <li><a href="services.html">Music Videos</a></li>
+              <li><a href="services.html">Commercials</a></li>
+              <li><a href="services.html">Documentaries</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <div class="social-links">
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="#" aria-label="Behance"
+                ><i class="fab fa-behance"></i
+              ></a>
+              <a href="#" aria-label="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+            <div class="newsletter">
+              <p>Subscribe to my newsletter</p>
+              <form>
+                <input type="email" placeholder="Your Email" />
+                <button type="submit">
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; <span id="year"></span> Izhan Akhter. All rights reserved.
+          </p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lg-video/2.0.0/lg-video.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/portfolio.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </body>
+</html>
